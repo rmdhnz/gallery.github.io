@@ -1,15 +1,15 @@
 const container = document.querySelector('.container');
 const jumbo = document.querySelector('.container .jumbo');
-const thumbs = document.querySelectorAll('.thumb');
+const thumbs = document.querySelectorAll('.thumb img');
 container.addEventListener('click',function(e){
-    if(e.target.className=='thumb'){
+    if(e.target.tagName =='IMG'){
         jumbo.style.backgroundImage = `url(${e.target.src})`;
         jumbo.classList.add('fade');
         setTimeout(function(){
             jumbo.classList.remove('fade');
         },500);
         thumbs.forEach(function(thumb){
-            thumb.className= 'thumb';
+            thumb.classList.remove('active');
         });
         e.target.classList.add('active');
     }
