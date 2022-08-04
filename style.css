@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+}
+body{
+    background-color: #ccc;
+    height: 800px;
+}
+.container{
+    width: 600px;
+    margin: 30px auto;
+    border: 5px solid white;
+    overflow: auto;
+}
+.jumbo{
+    width: 600px;
+    height: 400px;
+    background-color: #ccc;
+    border-bottom: 2px solid white;
+}
+.thumb{
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.thumb:hover{
+    opacity: .5;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade{
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+.active{
+    opacity: .5;
+}
