@@ -20,7 +20,7 @@ button.appendChild(document.createTextNode('reset'));
 container.after(button);
 button.style.padding = "10px";
 button.style.cursor = "pointer";
-
+button.style.marginBottom = "30px";
 button.addEventListener('click',function(){
     jumbo.removeAttribute('style');
     thumbs.forEach(function(thumb){
